@@ -61,8 +61,8 @@ public class PersonaLogica {
         return true;
     }
 //       public List<Persona> listarPersonas() {
-////        PersonaDAO per = new PersonaDAO();
-////        return per.listarPersonasCliente();
+//        PersonaDAO per = new PersonaDAO();
+//        return per.listarPersonasCliente();
 //    }
 //
 //    public int eliminarPersonas(Persona id) {

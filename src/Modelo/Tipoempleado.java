@@ -60,6 +60,14 @@ public class Tipoempleado implements Serializable {
         this.categoria = categoria;
     }
 
+    public Tipoempleado(Integer idTipoEmpleado, String categoria, String descripcion) {
+        this.idTipoEmpleado = idTipoEmpleado;
+        this.categoria = categoria;
+        this.descripcion = descripcion;
+    }
+
+    
+    
     public Integer getIdTipoEmpleado() {
         return idTipoEmpleado;
     }

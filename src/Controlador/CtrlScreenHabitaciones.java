@@ -1,6 +1,6 @@
 package Controlador;
 
-import Logica.HabitacionLogica;
+//import Logica.HabitacionLogica;
 import Modelo.Habitacion;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -25,7 +25,7 @@ public class CtrlScreenHabitaciones implements ActionListener{
     ScreenHabitaciones formScreen = new ScreenHabitaciones();
     JDesktopPane deskMain;
     List<Habitacion> listHab = null;
-    HabitacionLogica habLog = null;
+    //HabitacionLogica habLog = null;
     itemHabitacion item_1 = null;
     JPanel content = new JPanel();
     int idEmpleado = 0;
@@ -44,7 +44,7 @@ public class CtrlScreenHabitaciones implements ActionListener{
         this.formScreen = form;  
         this.deskMain = panel;
         this.idEmpleado = idEmp;
-        habLog = new HabitacionLogica();
+        //habLog = new HabitacionLogica();
                 
         this.formScreen.setLayout(new BorderLayout());
         this.formScreen.setBounds(90,90, 850, 500);
@@ -100,9 +100,9 @@ public class CtrlScreenHabitaciones implements ActionListener{
     private void generarItemsHabitacion(itemHabitacion item_1, JPanel content, int made, String attrib){
         
         if(made == 1)
-            listHab = habLog.ListarHabitaciones_Item();
-        else
-            listHab = habLog.List_Habitacion_estado(attrib);
+            //listHab = habLog.ListarHabitaciones_Item();
+        //else
+            //listHab = habLog.List_Habitacion_estado(attrib);
         
             
         for(Habitacion hab : listHab){
@@ -213,18 +213,18 @@ public class CtrlScreenHabitaciones implements ActionListener{
         
         JButton btn = (JButton)e.getSource();
         if(btn.getText().equals("ALQUILAR")){
-            CtrlRegistroAlquilerReserva CtrlRegAlq = new CtrlRegistroAlquilerReserva(deskMain, Integer.parseInt(btn.getActionCommand()),idEmpleado);
-            CtrlRegAlq.showForm();
+            //CtrlRegistroAlquilerReserva CtrlRegAlq = new CtrlRegistroAlquilerReserva(deskMain, Integer.parseInt(btn.getActionCommand()),idEmpleado);
+            //CtrlRegAlq.showForm();
         }
         
         if(btn.getText().equals("DESOCUPAR")){
-            CtrlRegistroFacturacion CtrlRegFac = new CtrlRegistroFacturacion(deskMain, Integer.parseInt(btn.getActionCommand()));
-            CtrlRegFac.showForm();
+            //CtrlRegistroFacturacion CtrlRegFac = new CtrlRegistroFacturacion(deskMain, Integer.parseInt(btn.getActionCommand()));
+            //CtrlRegFac.showForm();
         }
         
         if(e.getActionCommand().equals("Confirmar")){
-            CtrlRegistroAlquilerReserva CtrlRegAlq = new CtrlRegistroAlquilerReserva(deskMain, 0,idEmpleado);
-            CtrlRegAlq.showForm();
+            //CtrlRegistroAlquilerReserva CtrlRegAlq = new CtrlRegistroAlquilerReserva(deskMain, 0,idEmpleado);
+            //CtrlRegAlq.showForm();
         }
         
     }

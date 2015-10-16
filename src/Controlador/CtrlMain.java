@@ -157,8 +157,8 @@ public class CtrlMain implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getActionCommand().equals("btnRegHab")){
-            CtrlRegistroHabitacion ctrlRegHab = new CtrlRegistroHabitacion(formMain.DskMain);
-            ctrlRegHab.showForm();            
+            //CtrlRegistroHabitacion ctrlRegHab = new CtrlRegistroHabitacion(formMain.DskMain);
+            //ctrlRegHab.showForm();            
         }
         if(e.getActionCommand().equals("btn_regTipoEmp")){
             Reg_TipoEmpleado formTE = new Reg_TipoEmpleado();
@@ -167,8 +167,8 @@ public class CtrlMain implements ActionListener{
         }
         if(e.getActionCommand().equals("btn_RegEmp")){
             RegistroEmpleado formRE = new RegistroEmpleado();
-            Ctrl_RegEmpleado ctrlRE = new Ctrl_RegEmpleado(formRE,formMain.DskMain);
-            ctrlRE.runner();
+            //Ctrl_RegEmpleado ctrlRE = new Ctrl_RegEmpleado(formRE,formMain.DskMain);
+            //ctrlRE.runner();
         }
         if(e.getActionCommand().equals("btn_RegCli")){
             RegCliente formRC = new RegCliente();
@@ -182,7 +182,7 @@ public class CtrlMain implements ActionListener{
         }
          if(e.getActionCommand().equals("btnRegProd")){
              
-            CtrlRegistroProducto ctrlRegprod = new CtrlRegistroProducto(formMain.DskMain);
+            //CtrlRegistroProducto ctrlRegprod = new CtrlRegistroProducto(formMain.DskMain);
             ctrlRegprod.showForm();            
         }
         
@@ -198,20 +198,20 @@ public class CtrlMain implements ActionListener{
 //        }
             if (e.getActionCommand().equalsIgnoreCase("RepAnio"))//modifique yo max
          {
-          CntrReporte_Anio cntrReport_Anio= new CntrReporte_Anio(formMain.DskMain);
-          cntrReport_Anio.showForm();
+          //CntrReporte_Anio cntrReport_Anio= new CntrReporte_Anio(formMain.DskMain);
+          //cntrReport_Anio.showForm();
            
         }
         if (e.getActionCommand().equalsIgnoreCase("RepMes"))//modifique yo max
          {
-          CntrReporte_Mes cntrReport_Mes= new CntrReporte_Mes(formMain.DskMain);
-          cntrReport_Mes.showForm();
+          //CntrReporte_Mes cntrReport_Mes= new CntrReporte_Mes(formMain.DskMain);
+          //cntrReport_Mes.showForm();
            
         }
         if (e.getActionCommand().equalsIgnoreCase("RepDia"))//modifique yo max
          {
-          CntrReporteDia cntrReport_Dia= new CntrReporteDia(formMain.DskMain);
-          cntrReport_Dia.showForm();
+          //CntrReporteDia cntrReport_Dia= new CntrReporteDia(formMain.DskMain);
+          //cntrReport_Dia.showForm();
            
         }
     }

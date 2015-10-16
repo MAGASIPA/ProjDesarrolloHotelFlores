@@ -1,8 +1,8 @@
 package vista;
 
-import Controlador.CtrlLogin;
+//import Controlador.CtrlLogin;
 import Controlador.CtrlMain;
-import Controlador.PersonaControlador;
+//import Controlador.PersonaControlador;
 import de.javasoft.plaf.synthetica.SyntheticaAluOxideLookAndFeel;
 import java.text.ParseException;
 import javax.swing.UIManager;
