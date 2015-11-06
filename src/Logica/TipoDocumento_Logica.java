@@ -78,6 +78,7 @@ public class TipoDocumento_Logica {
         }
         em.close();
         emf.close();
+        
         return true;
     }
 }

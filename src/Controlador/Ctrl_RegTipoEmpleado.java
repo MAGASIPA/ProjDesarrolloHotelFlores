@@ -52,6 +52,7 @@ public class Ctrl_RegTipoEmpleado implements ActionListener, MouseListener {
     public void limpiar() {
         formRTE.txt_categoria.setText(null);
         formRTE.txt_descripcion.setText(null);
+        formRTE.txt_Codigo.setText(null);
     }
 
     public void runner() {
@@ -108,6 +109,7 @@ public class Ctrl_RegTipoEmpleado implements ActionListener, MouseListener {
             if (tel.modificar(obj)) {
                 JOptionPane.showMessageDialog(null, "Tipo de Empleado modificado con exito");
                 cargarTipoEmpleado();
+                limpiar();
             } else {
                 JOptionPane.showMessageDialog(null, "ERROR en modificación de datos");
             }
